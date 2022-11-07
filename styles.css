@@ -1,3 +1,7 @@
+* {
+    /*border: 2px solid red;*/
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -57,14 +61,41 @@ h1 {
 
 .subsection {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding-top: 16px;
     flex: 1;
 }
 
+.squares {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    font-size: 18px;
+    color: #1f2937;
+    text-align: center;
+}
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+    width: 150px;
+    padding-left: 50px;
+}
+.subimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
 img {
     width: 450px;
+    border-radius: 8px;
+}
+img:hover {
+    transform: scale(1.1);
 }
 
 .quote {
@@ -135,4 +166,17 @@ button {
     color: #e5e7eb;
     padding: 5px 14px;
     font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+li:hover {
+    transform: scale(1.1);
 }
