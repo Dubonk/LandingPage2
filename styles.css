@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.header, .main, .footer {
+    background-color: #1f2937;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 80px;
+}
+
+.header > p {
+    color: #f9faf8;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    padding: 32px;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: #e5e7eb;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.left {
+    width: 500px;
+    padding-left: 50px;
+    /* might not need flex shrink*/
+    flex-shrink: 0;
+
+}
+
+.right {
+    padding-right: 50px;
+}
+
+.left > p, .header {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.subsection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 16px;
+    flex: 1;
+}
+
+img {
+    width: 450px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #e5e7eb;
+    font-style: italic;
+}
+
+.quotes {
+    width: 60%;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.blue {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    width: 70%;
+    border-radius: 8px;
+    padding: 12px;
+    flex-shrink: 0;
+}
+
+.info {
+    padding-left: 50px;
+}
+
+.signup {
+    border-style: solid;
+    border-color: #e5e7eb;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.footer {
+    color: #e5e7eb;
+    padding: 12px;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+button {
+    background-color: #3882f6;
+    border-style: none;
+    border-radius: 3px;
+    color: #e5e7eb;
+    padding: 5px 14px;
+    font-weight: bold;
+}
