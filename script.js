@@ -6,6 +6,7 @@ const projectLinks = document.querySelector('.squares');
 const quotes = document.querySelector('.quote');
 const action = document.querySelector('.action');
 const footer = document.querySelector('.footer');
+const title = document.querySelector('#title');
 let timeDisplay = document.getElementById('time');
 
 function refreshTime() {
@@ -27,6 +28,7 @@ themeBtn.addEventListener('click', () => {
     footer.classList.toggle('darker');
     subSection.style.borderBottom = 'none';
     footer.style.borderBottom = 'none';
+    title.style.color = 'white';
     if(subSection.classList.contains('darker')) {
         themeBtn.textContent = 'Light';
     }
