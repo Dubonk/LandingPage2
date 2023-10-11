@@ -7,6 +7,7 @@ const quotes = document.querySelector('.quote');
 const action = document.querySelector('.action');
 const footer = document.querySelector('.footer');
 const title = document.querySelector('#title');
+const dropBtn = document.querySelector('.dropBtn');
 let timeDisplay = document.getElementById('time');
 
 function refreshTime() {
@@ -36,6 +37,10 @@ themeBtn.addEventListener('click', () => {
         themeBtn.textContent = 'Dark';
     }
 });
+
+// dropBtn.addEventListener('mouseover', () => {
+//     dropBtn.classList.toggle('dropDownLight');
+// })
 
 function enableDark() {
     themeBtn.textContent = 'Light';
