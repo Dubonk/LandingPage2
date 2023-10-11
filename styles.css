@@ -201,3 +201,8 @@ li:hover {
     color: #e5e7eb;
     border-bottom: 1px solid #8b949e;
 }
+
+#title {
+    font-size: xx-large;
+    font-weight: bolder;
+}
