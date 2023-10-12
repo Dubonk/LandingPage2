@@ -193,8 +193,8 @@ a {
 
 #theme {
     background-color: transparent;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 16px;
@@ -231,7 +231,6 @@ a {
     background-color: transparent;
     padding: 16px;
     font-size: 16px;
-    font-weight: 800;
     color: #e5e7eb;
 }
 
@@ -243,7 +242,6 @@ a {
     background-color: transparent;
     padding: 16px;
     font-size: 16px;
-    font-weight: 800;
     border: none;
     color: #e5e7eb;
   }
