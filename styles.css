@@ -190,13 +190,23 @@ a {
     text-decoration: none;
     color: #e5e7eb;
 }
-a:hover {
-    color: #3882f6;
-}
 
 #theme {
-    width: 60px;
+    background-color: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-radius: 0;
+    font-weight: unset;
     margin-right: 4%;
+}
+
+#theme:hover {
+    background-color: #283547;
+    transform: scale(1);
+    cursor: pointer;
 }
 
 .darkTheme {
@@ -221,19 +231,25 @@ a:hover {
     background-color: transparent;
     padding: 16px;
     font-size: 16px;
+    font-weight: 800;
     color: #e5e7eb;
 }
 
 .dropDown {
-    margin-right: 2%;
+    margin-right: 0%;
 }
 
 .dropBtn {
     background-color: transparent;
     padding: 16px;
     font-size: 16px;
+    font-weight: 800;
     border: none;
     color: #e5e7eb;
+  }
+
+  .dropBtn:hover {
+    cursor: pointer;
   }
 
   .dropDownContent {
@@ -267,4 +283,9 @@ a:hover {
 
   .dropDown:hover .dropBtn, .home:hover {
     background-color: #283547;
+  }
+
+  #moon, #sun {
+    width: 30px;
+    box-shadow: none;
   }

@@ -8,6 +8,12 @@ const action = document.querySelector('.action');
 const footer = document.querySelector('.footer');
 const title = document.querySelector('#title');
 const dropBtn = document.querySelector('.dropBtn');
+const moonSvg = document.createElement('img');
+moonSvg.src = 'svg/moon.svg';
+moonSvg.setAttribute('id', 'moon');
+const sunSvg = document.createElement('img');
+sunSvg.src = 'svg/sun.svg';
+sunSvg.setAttribute('id', 'sun')
 let timeDisplay = document.getElementById('time');
 
 function refreshTime() {
@@ -19,7 +25,7 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 themeBtn.addEventListener('click', () => {
-    themeBtn.textContent = 'Light';
+    themeBtn.appendChild(sunSvg);
     header.classList.toggle('darker');
     main.classList.toggle('darkTheme');
     subSection.classList.toggle('darker');
@@ -31,10 +37,12 @@ themeBtn.addEventListener('click', () => {
     footer.style.borderBottom = 'none';
     title.style.color = 'white';
     if(subSection.classList.contains('darker')) {
-        themeBtn.textContent = 'Light';
+        themeBtn.appendChild(sunSvg);
+        themeBtn.removeChild(moonSvg);
     }
     else {
-        themeBtn.textContent = 'Dark';
+        themeBtn.appendChild(moonSvg);
+        themeBtn.removeChild(sunSvg);
     }
 });
 
@@ -43,7 +51,7 @@ themeBtn.addEventListener('click', () => {
 // })
 
 function enableDark() {
-    themeBtn.textContent = 'Light';
+    themeBtn.appendChild(sunSvg);
     header.classList.toggle('darker');
     main.classList.toggle('darkTheme');
     subSection.classList.toggle('darker');
@@ -54,10 +62,14 @@ function enableDark() {
     subSection.style.borderBottom = 'none';
     footer.style.borderBottom = 'none';
     if(subSection.classList.contains('darker')) {
-        themeBtn.textContent = 'Light';
+        themeBtn.appendChild(sunSvg);
+        if(themeBtn.contains(moonSvg)){
+        themeBtn.removeChild(moonSvg);
+        }
     }
     else {
-        themeBtn.textContent = 'Dark';
+        themeBtn.appendChild(moonSvg);
+        themeBtn.removeChild(sunSvg);
     }
 }
 
