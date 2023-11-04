@@ -66,6 +66,7 @@ h1 {
     font-size: 18px;
     color: #1f2937;
     text-align: center;
+    overflow: hidden;
 }
 .square {
     display: flex;
@@ -128,6 +129,8 @@ img:hover {
     padding: 12px;
     flex-shrink: 0;
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .info {
@@ -147,16 +150,12 @@ img:hover {
 
 .footer {
     display: flex;
+    justify-content: space-between;
     color: #e5e7eb;
     padding: 12px;
     text-align: center;
     margin-top: auto;
     background-color: #1f2937;
-}
-
-#topLink {
-position: fixed;
-left: 45%;
 }
 
 #topLink > a:hover {
