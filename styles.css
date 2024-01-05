@@ -9,10 +9,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.main {
-    background-color: #e5e7eb;
-    color: black;
-}
+
 .header {
     background-color: #1f2937;
     display: flex;
@@ -27,7 +24,10 @@ body {
     display: flex;
     flex: 1;
     padding: 32px;
+    align-items: center;
     justify-content: space-evenly;
+    background-color: #e5e7eb;
+    color: black;
 }
 
 h1 {
@@ -36,18 +36,13 @@ h1 {
 }
 
 .left {
-    width: 500px;
+    width: 50%;
     padding-left: 50px;
-    /* might not need flex shrink*/
-    flex-shrink: 0;
-
 }
 
 .right {
     padding-right: 50px;
 }
-
-
 
 .subsection {
     display: flex;
@@ -92,6 +87,11 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+
+#githubImg {
+    width: 400px;
+}
+
 #githubImg:hover {
     transform: scale(1.0);
 }
@@ -291,3 +291,46 @@ a {
   .dropDownContent > li > a:hover {
     color: #3882f6;
   }
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+        padding: 0;
+        padding-left: 4%;
+    }
+    #title {
+        margin-right: 25px;
+    }
+    .home, .dropBtn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        padding: 0;
+        text-align: center;
+        width: 80%;
+    }
+    .right {
+        padding: 0;
+    }
+    #githubImg {
+        width: 250px;
+        margin-top: 15px;
+    }
+    .squares {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quotes {
+        width: 80%;
+    }
+    .blue {
+        width: 80%;
+    }
+}
