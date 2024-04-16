@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
     <title>Landing Page 2.0</title>
 </head>
-<body>
-    <div class="header">
-        <div id="title">Kevvbro</div>
-        <div class="home"><a href="https://dubonk.github.io/LandingPage2/">Home</a></div>
+<body class="h-screen m-0 text-white">
+    <div class="w-100 flex justify-between h-20 bg-slate-800 border-b-2">
+        <div class="text-5xl">Kevvbro</div>
+        <div class=""><a href="https://dubonk.github.io/LandingPage2/">Home</a></div>
         <div class="dropDown">
             <div class="dropBtn">Contact
                 <div class="dropDownContent">
@@ -21,22 +21,19 @@
         </div>
         <div id="theme"></div>
     </div>
-    <div class="main">
+    <div class="main flex h-1/3 bg-slate-600">
         <div class="left">
             <h1>Who is Kevvbro?</h1>
             <p>Kevvbro is the social media name for Kevin Dubon. He is currently studying for web dev!</p>
             <a href="https://github.com/Dubonk"><button>Visit Github</button></a>
         </div>
-        <div class="right">
+        <div class="right w-96">
             <img id="githubImg" src="./pictures/githubProfile.png" alt="Github Profile">    
         </div>
     </div>
-    <div class="subsection">
+    <div class="subsection flex-col h-1/3 items-center bg-slate-800">
         <h2>Projects</h2>
-        <div class="squares">
-            <!-- <div class="square"><a href="https://dubonk.github.io/odin-recipes2/"><img class="subimg" src="./pictures/OdinRecipes.png"></a>
-                <b>Odin Recipes</b> My first project, at the time, I could not believe I created this.
-                </div> -->
+        <div class="squares flex gap-5">
             <div class="square">
                     <a href="https://dubonk.github.io/LibraryProject/">
                     <img class="subimg" src="./pictures/LibraryProject.png">
@@ -64,14 +61,14 @@
         </div>
 
     </div>
-    <div class="quote">
+    <div class="quote bg-slate-800">
        <div class="quotes">
         <p>What can I say about Kevvbro that hasn't been said before. He is amazing at everything he does, naturally gifted and extremely tall.</p>
         <p><b>-Kevvbro, Gamer God</b></p>
     </div>
     </div>
-    <div class="action">
-        <div class="blue">
+    <div class="action bg-slate-600">
+        <div>
             <div class="info">
             <h3>Call to action! It's time!</h3>
             <p>Subscribe to my Youtube channel to follow my journey!</p>
@@ -79,7 +76,7 @@
             <a id="signup" href="https://www.youtube.com/@kevindubon43/featured">Subscribe</a>
             </div>
         </div>
-    <div class="footer">
+    <div class="footer flex justify-between bg-slate-800">
         <div id="time"></div>
         <div id="topLink">Learn to code @ <a href="https://www.theodinproject.com/about">The Odin Project</a>
             </div>
