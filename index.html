@@ -8,77 +8,77 @@
     <title>Landing Page 2.0</title>
 </head>
 <body class="h-screen m-0 text-white">
-    <div class="w-100 flex justify-between h-20 bg-slate-800 border-b-2">
-        <div class="text-5xl">Kevvbro</div>
-        <div class=""><a href="https://dubonk.github.io/LandingPage2/">Home</a></div>
+    <div class="w-100 flex items-center py-2 h-20 bg-slate-800 border-b-2">
+        <div class="text-5xl font-semibold mr-auto ml-4">Kevvbro</div>
+        <div class="hover:bg-slate-500 p-4"><a href="https://dubonk.github.io/LandingPage2/">Home</a></div>
         <div class="dropDown">
-            <div class="dropBtn">Contact
-                <div class="dropDownContent">
+            <div class="dropBtn p-4 hover:bg-slate-500">Contact
+                <!-- <div class="dropDownContent">
                     <li><b>LinkedIn</b>:<a href="https://www.linkedin.com/in/kevin-dubon-42653b241/"> Kevin Dubon</a></li>
                     <li><b>Email</b>: kevindubon43@gmail.com</li>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div id="theme"></div>
+        <div id="theme" class="w-8 hover:bg-slate-500 py-4 mx-4"></div>
     </div>
-    <div class="main flex h-1/3 bg-slate-600">
-        <div class="left">
-            <h1>Who is Kevvbro?</h1>
-            <p>Kevvbro is the social media name for Kevin Dubon. He is currently studying for web dev!</p>
-            <a href="https://github.com/Dubonk"><button>Visit Github</button></a>
+    <div class="main flex items-center justify-evenly h-80 px-20 bg-slate-600 border-b-2">
+        <div class="left mr-20">
+            <h1 class="text-5xl font-semibold mb-4">Who is Kevvbro?</h1>
+            <p class="text-lg">Kevvbro is the social media name for Kevin Dubon. He is currently studying for web dev!</p>
+            <a href="https://github.com/Dubonk"><button class="rounded hover:scale-110 bg-blue-500 px-5" >Visit Github</button></a>
         </div>
         <div class="right w-96">
-            <img id="githubImg" src="./pictures/githubProfile.png" alt="Github Profile">    
+            <img id="githubImg" class="rounded shadow-md shadow-black" src="./pictures/githubProfile.png" alt="Github Profile">    
         </div>
     </div>
-    <div class="subsection flex-col h-1/3 items-center bg-slate-800">
-        <h2>Projects</h2>
-        <div class="squares flex gap-5">
-            <div class="square">
+    <div class="subsection flex-col items-center text-center h-1/3 bg-slate-800 border-b-2">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="squares flex max-h-full justify-evenly mt-10 gap-10 mx-6">
+            <div class="square w-1/5 flex flex-col items-center">
                     <a href="https://dubonk.github.io/LibraryProject/">
-                    <img class="subimg" src="./pictures/LibraryProject.png">
+                    <img class="subimg hover:scale-110 mb-2 rounded outline" src="./pictures/LibraryProject.png">
                         </a> 
-                    <b>Library Project</b>This project taught me about arrays and object constructors.
+                    <div class="w-4/5 text-center"><b>Library Project</b><br>This project taught me about arrays and object constructors.</div>
                 </div>
-            <div class="square">
+            <div class="square w-1/5 flex flex-col items-center">
                 <a href="https://dubonk.github.io/TicTacToe/">
-                    <img class="subimg" src="./pictures/TicTacToe.png" alt="TIc Tac Toe">
+                    <img class="hover:scale-110 rounded mb-2 outline" src="./pictures/TicTacToe.png" alt="TIc Tac Toe">
                 </a>
-                <b>Tic Tac Toe</b> TTT taught me about factory functions and modules. It took me around 2 weeks to complete.
+                <div class="w-4/5 text-center"><b>Tic Tac Toe</b><br> Taught me about factory functions and modules. Around 2 weeks to complete.</div>
                 </div>
-            <div class="square">
+            <div class="square w-1/5  flex flex-col items-center">
                     <a href="https://dubonk.github.io/Restaurant-Page/">
-                    <img class="subimg" src="./pictures/RestaurantSite.png">
+                    <img class="hover:scale-110 rounded mb-2 outline" src="./pictures/RestaurantSite.png">
                         </a>
-                    <b>Restaurant website</b>This project taught me about webpack and tab switching.
+                    <div class="w-4/5 text-center"><b>Restaurant website</b> <br> This project taught me about webpack and tab switching.</div>
                 </div>
-            <div class="square">
+            <div class="square w-1/5  flex flex-col items-center">
                     <a href="https://dubonk.github.io/WeatherApp/">
-                    <img class="subimg" src="./pictures/WeatherApp.png">
+                    <img class="mb-2 hover:scale-110 rounded outline" src="./pictures/WeatherApp.png">
                         </a> 
-                    <b>Weather App</b> This project taught me about APIs. took me about 6 hours to complete.
+                   <div class="w-4/5 text-center"> <b>Weather App</b><br> This project taught me about APIs. took me about 6 hours to complete.</div>
                 </div>
         </div>
 
     </div>
-    <div class="quote bg-slate-800">
-       <div class="quotes">
-        <p>What can I say about Kevvbro that hasn't been said before. He is amazing at everything he does, naturally gifted and extremely tall.</p>
+    <div class="quote h-1/5 flex items-center justify-center bg-slate-800 border-b-2">
+       <div class="w-3/5 text-center">
+        <p class="italic text-lg">What can I say about Kevvbro that hasn't been said before. He is amazing at everything he does, naturally gifted and extremely tall.</p>
         <p><b>-Kevvbro, Gamer God</b></p>
     </div>
     </div>
-    <div class="action bg-slate-600">
-        <div>
+    <div class="action h-44 flex items-center justify-center bg-slate-600 border-b-2">
+        <div class="bg-sky-500 rounded p-4 flex shadow-sm shadow-black">
             <div class="info">
-            <h3>Call to action! It's time!</h3>
-            <p>Subscribe to my Youtube channel to follow my journey!</p>
+            <h3 class="text-lg font-semibold">Call to action! It's time!</h3>
+            <p class="w-2/3">Subscribe to my Youtube channel to follow my journey!</p>
                 </div>
-            <a id="signup" href="https://www.youtube.com/@kevindubon43/featured">Subscribe</a>
+            <a id="signup" class="border-2 hover:scale-110 self-center p-2 rounded" href="https://www.youtube.com/@kevindubon43/featured">Subscribe</a>
             </div>
         </div>
-    <div class="footer flex justify-between bg-slate-800">
+    <div class="footer h-10 px-3 flex justify-between items-center bg-slate-800">
         <div id="time"></div>
-        <div id="topLink">Learn to code @ <a href="https://www.theodinproject.com/about">The Odin Project</a>
+        <div id="topLink">Learn to code @ <a class="hover:text-cyan-300" href="https://www.theodinproject.com/about">The Odin Project</a>
             </div>
         </div>
     <script src="script.js"></script>
