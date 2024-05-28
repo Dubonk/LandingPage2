@@ -89,7 +89,7 @@ img:hover {
 }
 
 #githubImg {
-    width: 400px;
+    width: 250px;
 }
 
 #githubImg:hover {
@@ -109,6 +109,9 @@ img:hover {
     text-align: center;
     font-size: larger;
     width: 60%;
+}
+#author {
+    font-weight: 700;
 }
 
 .action {
@@ -298,6 +301,7 @@ a {
         padding-left: 4%;
     }
     #title {
+        font-size: large;
         margin-right: 25px;
     }
     .home, .dropBtn {
@@ -330,7 +334,14 @@ a {
     .quotes {
         width: 80%;
     }
+    .action {
+        min-height: 250px;
+    }
     .blue {
         width: 80%;
+        height: 50%;
+    }
+    .info > h3, .info > p {
+        margin: 4px;
     }
 }

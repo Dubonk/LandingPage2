@@ -1,4 +1,6 @@
 const themeBtn = document.querySelector('#theme');
+const quote = document.getElementById('quote');
+const author = document.getElementById('author');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const subSection = document.querySelector('.subsection');
@@ -49,6 +51,18 @@ themeBtn.addEventListener('click', () => {
 // dropBtn.addEventListener('mouseover', () => {
 //     dropBtn.classList.toggle('dropDownLight');
 // })
+
+fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    let num = Math.floor(Math.random() * (16 - 1 + 1) + 1)
+    let quotes = data[num];
+    quote.textContent = quotes.text;
+    author.textContent = '- ' + quotes.author.split(",")[0];
+    console.log(data, quotes);
+  });
 
 function enableDark() {
     themeBtn.appendChild(sunSvg);
